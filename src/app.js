@@ -29,4 +29,8 @@ app.get('/credit', (req, res) => {
     res.render('account', { account: accounts.credit })
 })
 
+app.get('/profile', (req, res) => {
+    res.render('profile', { user: users[0] })
+})
+
 app.listen(3000, () => console.log(`Hey you, you're finally awake on port 3000`))
